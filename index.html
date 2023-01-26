@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Kinh dị: Ngủ nhà bạn</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js"></script>
+</head>
+
+<body>
+
+    <div class="page page1" id="page1">
+        <div class="rulediv">
+            <h1>Game có:</h1>
+            <p style="color: red;">2 super bad ending</p>
+            <p class="nottop">??? bad ending</p>
+            <p class="nottop" style="color: lightgreen;">2 good ending</p>
+        </div>
+        <button class="startBtn" onclick="openpage(2)">Bắt đầu</button>
+    </div>
+
+    <div class="page page2" id="page2">
+        <div class="maskvideo">
+            <iframe id="horrorVideo" src="https://www.youtube.com/embed/NjGmJLIYWTQ?start=5231&autoplay=0&controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        </div>
+        <img class="effect3dimage" src="./images/background_2_top_cutout.png">
+        <div class="loithoai">
+            <p id="loithoaipage2" style="margin: 30px;">Tuấn là thằng bạn thân của bạn, hôm nay bố mẹ nó đều phải đi trực đêm nên nó rủ bạn sang ngủ cùng. 2 đứa quyết định xem bộ phim “Ngôi nhà ma ám” trước khi đi ngủ…</p>
+            <button id="nextbtn2" style="position:absolute; bottom:0; right:0; font-size:30px" onclick="changetextpage2()">Tiếp theo...</button>
+            <div class="selectdiv selectdiv2" id="selectdiv2">
+                <button onclick="openpage(4)">Mặc kệ</button>
+                <button onclick="openpage(5)">Xuống kiểm tra</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page page4" id="page4">
+        <div class="loithoai">
+            <p id="loithoaipage4" style="margin: 30px;">2 đứa đều sợ ma nên đều giả vờ không nghe thấy. Lần này, là tiếng mở cửa từ dưới tầng 1 vọng lên rõ mồn một. 2 đứa thực sự rất sợ rồi, lẽ nào nhà có ma....</p>
+            <div class="selectdiv selectdiv4" id="selectdiv4">
+                <button onclick="openpage(6)">Xuống kiểm tra</button>
+                <button onclick="openpage(7)">Giả vờ ngủ</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page page5" id="page5">
+        <div class="loithoai">
+            <p id="loithoaipage5" style="margin: 30px;">Nghe thấy tiếng động, thằng Tuấn vội gọi điện bảo bố hình như nhà có trộm. Cả 2 chạy xuống kiểm tra, đằng sau cửa chính lộ bằng kính rõ 1 bóng đen đang cố mở cửa. Nghe tiếng bước chân của bạn hắn ta trở nên điên cuồng phá cửa, phải làm sao
+                bây giờ ?</p>
+            <div class="selectdiv selectdiv5" id="selectdiv5">
+                <button onclick="openpage(8)">CHẠY VỀ PHÒNG KHÓA CỬA</button>
+                <button onclick="openpage(10)">TRỐN SAU GHẾ SOFA</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page page6" id="page6">
+        <div class="loithoai">
+            <p id="loithoaipage6" style="margin: 30px;">Cả 2 đều rất sợ, thằng Tuấn liền gọi điện báo bố hình như nhà có trộm. 2 thằng rón rén xuống kiểm tra, từ trên cầu thang ngó xuống, cửa chính đã mở toang.</p>
+            <div class="selectdiv selectdiv6" id="selectdiv6">
+                <button onclick="openpage(8)"> QUAY VỀ PHÒNG KHÓA CỬA </button>
+                <button onclick="openpage(11)">CHẠY NGAY RA KHỎI NHÀ</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page page7" id="page7">
+        <h1 class="superbadending" id="badendingtext">SUPER BAD ENDING</h1>
+        <div class="loithoai">
+            <p id="loithoaipage7" style="margin: 30px;">2 đứa sợ đến nỗi són ra quần vội tắt tivi nằm lên giường trùm chăn kín mít vì sợ ma bắt. Có tiếng bước chân từ từ tiến tới gần rồi dừng hẳn ngay đầu giường. 10 phút sau vẫn không thấy gì, bạn từ từ vén chăn lên. Bỗng 1 giọng nói khàn đặc từ
+                trong góc phòng cất lên:</p>
+            <p style="color: red; font-style: italic; font-weight: 500;"> -Tao biết mày chưa ngủ mà...</p>
+            <p> Cả 2 chết điếng người vì biết kết cục sắp tới chỉ có 1 mà thôi. GẶP NGUY HIỂM MÀ KHÔNG LÀM GÌ NÊN BẠN ĐÃ PHẢI TRẢ CÁI GIÁ ĐẮT NHẤT</p>
+            <div class="selectdiv selectdiv7" id="selectdiv7">
+                <button onclick="window.location.href = './index.html'">Chơi lại</button>
+            </div>
+        </div>
+    </div>
+
+    <div class=" page page8 " id="page8">
+        <div class="loithoai ">
+            <p id="loithoaipage6 " style="margin: 30px; ">Cả 2 chạy vội về phòng khóa cửa, có tiếng chạy đuổi theo từ dưới nhà. Hắn ta đã đứng ngay trước cửa phòng rồi: </p>
+            <p style="color: red; font-style: italic; font-weight: 500;">- RA ĐÂY NÀO BÉ CON !</p>
+            <button id="nextbtn2" style="position:absolute; bottom:0; right:0; font-size:30px" onclick="openpage(9)">Tiếp theo...</button>
+        </div>
+    </div>
+
+    <div class="page page9 " id="page9">
+        <div class="loithoai">
+            <p id="loithoaipage9" style="margin: 30px; ">Cả 2 vô cùng sợ hãi, hắn ta bắt đầu điên cuồng bồ lưỡi rìu phá cửa. Phải làm gì bây giờ, hắn sắp vào được đây rồi !</p>
+            <div class="selectdiv selectdiv9" id="selectdiv9">
+                <button onclick="openpage(13)"> CHIA RA, BẠN TRỐN TRONG TỦ </button>
+                <button onclick="openpage(14) ">CHIA RA, BẠN TRỐN DƯỚI GẦM GIƯỜNG</button>
+                <button onclick="openpage(15) "> CÙNG TRỐN TRONG TỦ </button>
+                <button onclick="openpage(16) ">CÙNG TRỐN DƯỚI GẦM GIƯỜNG</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page page10 " id="page10">
+        <div class="loithoai">
+            <p id="loithoaipage10" style="margin: 30px; ">Cả 2 vội trốn sau ghế sofa. RẦMIII Cửa đã bị phá, hắn ta chạy như bay thẳng lên trên tầng, cả 2 sợ chết điếng sau ghế sofa.</p>
+            <div class="selectdiv selectdiv10 " id="selectdiv10">
+                <button onclick="openpage(17) ">Ở LẠI NƠI ẨN NẤP</button>
+                <button onclick="openpage(18) ">CHẠY NGAY RA NGOÀI</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page page11 " id="page11">
+        <div class="loithoai ">
+            <p id="loithoaipage11" style="margin: 30px; ">Ở đây không còn an toàn nữa rồi ! Cả 2 chạy như bay ra phía cửa chính, sắp ra ngoài được rồi. Gần tới cửa chính rồi, thằng Tuấn chạy ngay phía sau. Bỗng từ trong bóng tối 1 lưỡi rìu lia vút tới cắp phập vào thằng Tuấn, nó ngã quỵ xuống đất,
+                1 bóng đen thù lù đi ra.....</p>
+            <button id="nextbtn2" style="position:absolute; bottom:0; right:0; font-size:30px" onclick="openpage(12)">Tiếp theo...</button>
+        </div>
+    </div>
+
+    <div class="page page12 " id="page12">
+        <h1 class="superbadending" id="badendingtext">BAD ENDING</h1>
+        <div class="loithoai ">
+            <p id="loithoaipage12" style="margin: 30px; ">Hắn ta tiến tới và lôi thằng Tuấn thẳng vào trong bếp, quay đầu lại nói với bạn:
+            </p>
+            <p style="color: red; font-style: italic; font-weight: 500;">TAO SẼ TỚI TÌM MÀY SAU !.</p>
+            <p>
+                Bạn sợ hãi chạy ra khỏi nhà.10 phút sau bố mẹ thằng Tuấn đã về cùng 5 cảnh sát khác. Chỉ còn lại cảnh tượng kinh hoàng trong bếp, không hề phát hiện dấu vết của kẻ gây án.......
+            </p>
+            <p style="color: red; font-weight: 500;">Do hành động quá vội vã nên bạn thân của bạn đã phải trả giá. Không hề tìm thấy dấu vết gì của kẻ gây án, đây có thể là 1 tên sát nhân hàng loạt chuyên nghiệp.
+            </p>
+            <div class="selectdiv selectdiv12" id="selectdiv12">
+                <button onclick="window.location.href = './index.html'">Chơi lại</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page page13 " id="page13">
+        <h1 class="superbadending" id="badendingtext">BAD ENDING</h1>
+        <div class="loithoai ">
+            <p id="loithoaipage13" style="margin: 30px; ">Bạn vội trốn vào trong tủ, thằng Tuấn chui xuống gầm giường. RẦM!!! Cánh cửa đã bị phá, hắn từ từ bước vào phòng. Hắn ta chầm chậm củi người xuống, thằng Tuấn đã bị phát hiện. nó sợ hãi la hét cầu cứu, tên sát nhân liền vung thẳng lưỡi rìu
+                vào thằng Tuấn. Có tiếng xe cảnh sát ! Hắn ta vội vàng bỏ trốn.</p>
+            <p style="color: red; font-weight: 500;">Bố mẹ thằng Tuấn đã về cùng 5 cảnh sát khác, nhưng hắn ta đã kịp bỏ trốn. Tuấn đã không qua khỏi, bạn may mắn sống sót.</p>
+            <div class="selectdiv selectdiv13" id="selectdiv13">
+                <button onclick="window.location.href = './index.html'">Chơi lại</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page page14 " id="page14">
+        <h1 class="superbadending" id="badendingtext">BAD ENDING</h1>
+        <div class="loithoai ">
+            <p id="loithoaipage14" style="margin: 30px; ">Bạn vội chui xuống gầm giường, thằng Tuấn chui vào trong tủ. RẦM!!! Cánh cửa đã bị phá, hắn từ từ bước vào phòng. Hắn ta chầm chậm củi người xuống, bạn đã bị phát hiện. bạn sợ hãi la hét cầu cứu, tên sát nhân liền vung thẳng lưỡi rìu vào bạn.
+                Có tiếng xe cảnh sát ! Hắn ta vội vàng bỏ trốn.</p>
+            <p style="color: red; font-weight: 500;">Bố mẹ thằng Tuấn đã về cùng 5 cảnh sát khác, nhưng hắn ta đã kịp bỏ trốn. Tuấn may mắn sống sót, nhưng bạn đã không qua khỏi.</p>
+            <div class="selectdiv selectdiv14" id="selectdiv14">
+                <button onclick="window.location.href = './index.html'">Chơi lại</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page page15 " id="page15">
+        <h1 class="superbadending" id="badendingtext" style="color: green;">GOOD ENDING</h1>
+        <div class="loithoai ">
+            <p id="loithoaipage15" style="margin: 30px; ">Cả 2 quyết định cùng trốn vào trong tủ. RẦM!!! Cánh cửa đã bị phá, hắn từ từ bước vào phòng. Hắn ta chầm chậm cúi người xuống, dưới gầm giường không có ai. Tên sát nhân đứng nhìn 1 lúc quanh phòng, hắn từ từ tiến tới chiếc tủ. Bỗng có tiếng
+                còi xe cảnh sát, hắn ta vội vàng bỏ trốn</p>
+            <p style="color: green; font-weight: 500;">Bố mẹ thằng Tuấn đã về cùng 5 cảnh sát khác, nhưng hắn ta đã kịp bỏ trốn. Cả 2 may mắn sống sót. Cảnh sát báo đây là tên sát nhân hàng loạt đang bị truy nã cả năm nay rồi.</p>
+            <div class="selectdiv selectdiv15" id="selectdiv15">
+                <button onclick="window.location.href = './index.html'">Chơi lại</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page page16 " id="page16">
+        <h1 class="superbadending" id="badendingtext">SUPER BAD ENDING</h1>
+        <div class="loithoai ">
+            <p id="loithoaipage16" style="margin: 30px; ">Cả 2 quyết định cùng trốn xuống gầm giường. RẦM!!! Cánh cửa đã bị phá, hắn từ từ bước vào phòng. Hắn ta chầm chậm cúi người xuống, cả 2 đều bị phát hiện. cả 2 sợ hãi la hét toan chạy ta, tên sát nhân liền vung liên tiếp lưỡi rìu xuống dưới
+                gầm giường. Có tiếng xe cảnh sát ! Hắn ta vội vàng bỏ trốn.</p>
+            <p style="color: red; font-weight: 500;">Bố mẹ thằng Tuấn đã về cùng 5 cảnh sát khác, nhưng hắn ta đã kịp bỏ trốn. Hiện trường chỉ còn lại cảnh tượng kinh hoàng trong phòng ngủ.</p>
+            <div class="selectdiv selectdiv16" id="selectdiv16">
+                <button onclick="window.location.href = './index.html'">Chơi lại</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page page17" id="page17">
+        <h1 class="superbadending" id="badendingtext">SUPER BAD ENDING</h1>
+        <div class="loithoai ">
+            <p id="loithoaipage16" style="margin: 30px; ">Cả 2 vô cùng sợ hãi không dám làm gì. Từ trên tầng, hắn ta từ từ bước xuống tiến thẳng về phía ghế sofa. Cả 2 vội bỏ chạy, nhưng không kịp rồi. Tên sát nhân lia vút cây rìu cắm thẳng vào người bạn, thằng Tuấn may mắn chạy thoát. Hắn ta lôi
+                bạn từ từ vào trong bếp.</p>
+            <p style="color: red; font-weight: 500;">10 phút sau bố mẹ thằng Tuấn đã về cùng 5 cảnh sát khác. Chỉ còn lại cảnh tượng kinh hoàng của bạn ở trong bếp, không hề phát hiện dấu vết của kẻ gây án.......
+            </p>
+            <div class="selectdiv selectdiv16" id="selectdiv16">
+                <button onclick="window.location.href = './index.html'">Chơi lại</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page page18 " id="page18">
+        <h1 class="superbadending" id="badendingtext" style="color: green;">GOOD ENDING</h1>
+        <div class="loithoai ">
+            <p id="loithoaipage18" style="margin: 30px; ">Tận dụng cơ hội cả 2 liền chạy ngay ra khỏi nhà. Đã ra được tới sân, bạn ngước nhìn lên, phía trên tầng 2, ngay cửa sổ phòng ngủ, tên sát nhân đứng đó cởi chiếc mặt nạ ra và cười điên dại....</p>
+            <p style="color: green; font-weight: 500;">10 phút sau bố mẹ thằng Tuấn đã về cùng 5 cảnh sát khác, không hề phát hiện dấu vết của kẻ đột nhập. Cảnh sát báo có thể 2 bạn đã đụng độ phải tên sát nhân khét tiếng nhất cả nước, đến nay vẫn chưa bắt được hắn ta.</p>
+            <div class="selectdiv selectdiv18" id="selectdiv18">
+                <button onclick="window.location.href = './index.html'">Chơi lại</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

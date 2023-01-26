@@ -1,0 +1,200 @@
+@font-face {
+    font-family: "FzBloody";
+    src: url("/Fz-Bloody.ttf");
+}
+
+@font-face {
+    font-family: "roundedFont";
+    src: url("./Semibold-Rounded.otf");
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    background: black;
+}
+
+.page {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.page1 {
+    display: block;
+}
+
+.page1 {
+    background-image: url('/images/background_1.jpg');
+}
+
+.loithoai {
+    background: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    bottom: 0;
+    height: 30%;
+    width: 90%;
+    left: 5%;
+    border-radius: 30px;
+    overflow-y: scroll;
+}
+
+.loithoai p {
+    font-family: "roundedFont";
+    font-size: 2vw;
+    margin: 30px;
+}
+
+h1,
+p,
+button {
+    font-family: "FzBloody";
+}
+
+.rulediv {
+    background: rgba(128, 128, 128, 0.5);
+    border-radius: 10px;
+    width: fit-content;
+    padding: 0px 20px;
+}
+
+.rulediv p {
+    margin-top: 60px;
+    margin-left: 150px;
+    font-size: 30px;
+    color: #880808;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.rulediv .nottop {
+    margin-top: -30px;
+}
+
+.rulediv h1 {
+    color: whitesmoke;
+    font-weight: 100;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+
+.startBtn {
+    font-size: 6vw;
+    background: transparent;
+    border: 0px;
+    color: #880808;
+    cursor: pointer;
+    margin: 0;
+    position: absolute;
+    top: 85%;
+    left: 20%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-shadow: 4px 4px 1px #300000, 4px 6px 1px #400000, 4px 8px 1px #500000, 4px 10px 1px #600000, 4px 12px 1px #700000, 4px 14px 1px #800000, 4px 16px 1px #900000, 4px 18px 1px #A00000, 4px 20px 1px #B00000, 4px 22px 1px #C00000, 4px 24px 1px #D00000, 4px 26px 1px #E00000, 4px 28px 1px #F00000, 4px 30px 1px #FA0000, 4px 32px 1px #FB0000, 4px 34px 1px #FC0000, 4px 36px 1px #FD0000, 4px 38px 1px #FE0000, 4px 40px 2px #FF0000;
+}
+
+@media only screen and (max-width: 800px) {
+    .startBtn {
+        font-size: 10vw;
+    }
+    .loithoai p {
+        font-family: "roundedFont";
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .page1 {
+        background-image: url('/images/background_1_mobile.jpg');
+    }
+    .startBtn {
+        font-size: 15vw;
+        top: 85%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+
+.page2>.effect3dimage {
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+}
+
+.page2>.maskvideo {
+    width: 67%;
+    height: 78%;
+    position: fixed;
+    top: 16%;
+    left: 17%;
+    background: white;
+    overflow: hidden;
+}
+
+.page2>.maskvideo iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.selectdiv {
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+}
+
+.selectdiv button {
+    font-size: 25px;
+}
+
+.selectdiv2 {
+    display: none;
+}
+
+@keyframes zoom {
+    0% {
+        font-size: 10px;
+    }
+    100% {
+        font-size: 100px;
+    }
+}
+
+.superbadending {
+    text-align: center;
+    color: red;
+    font-size: 100px;
+    font-weight: 500;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: zoom 2s linear 0s 1;
+}
