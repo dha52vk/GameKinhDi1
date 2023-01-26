@@ -1,6 +1,6 @@
 @font-face {
     font-family: "FzBloody";
-    src: url("/Fz-Bloody.ttf");
+    src: url("./Fz-Bloody.ttf");
 }
 
 @font-face {
@@ -47,7 +47,7 @@ body {
 }
 
 .page1 {
-    background-image: url('/images/background_1.jpg');
+    background-image: url('./images/background_1.jpg');
 }
 
 .loithoai {
@@ -128,7 +128,7 @@ button {
 
 @media only screen and (max-width: 700px) {
     .page1 {
-        background-image: url('/images/background_1_mobile.jpg');
+        background-image: url('./images/background_1_mobile.jpg');
     }
     .startBtn {
         font-size: 15vw;
